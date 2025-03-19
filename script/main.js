@@ -72,6 +72,18 @@ const pages = {
           <p class="mt-2 text-lg">110 N Carpenter St, Chicago, IL 60607, USA</p>
           <p class="mt-2 text-lg">📞 +1 800-244-6227</p>
           <p class="mt-2 text-lg">✉️ contact@mcdonalds.com</p>
+              <div class="mt-6">
+                <h3 class="text-2xl font-semibold text-red-600">Find Us on the Map</h3>
+                <div class="mt-4">
+                    <iframe
+                        class="w-full max-w-2xl h-80 mx-auto rounded-lg shadow-lg"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2963.2149566531974!2d-87.65188052408262!3d41.88398407121883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2ca763bd340d%3A0x9f5243f92c0e5ad3!2sMcDonald&#39;s%20Global%20Headquarters!5e0!3m2!1sen!2sus!4v1710567836467!5m2!1sen!2sus"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
       </section>`,
   about: `
       <section class="text-center p-6">
