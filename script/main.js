@@ -88,8 +88,32 @@ const pages = {
   about: `
       <section class="text-center p-6">
           <h2 class="text-4xl font-bold text-red-600">Our Story</h2>
-          <p class="mt-4 text-lg">McDonald's has been serving amazing dishes since 1999. Fresh ingredients and love in every bite!</p>
-      </section>`,
+          <p class="mt-4 text-lg">
+              McDonald's has been serving amazing dishes since 1999. Fresh ingredients and love in every bite!
+          </p>
+          <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+              <img src="../imgs/kitchen.jpg" alt="Restaurant Kitchen" class="rounded-lg shadow-lg">
+              <div>
+                  <h3 class="text-2xl font-semibold text-red-600">Our Mission</h3>
+                  <p class="mt-2 text-lg">
+                      To bring joy through delicious, high-quality food while maintaining exceptional customer service.
+                  </p>
+              </div>
+          </div>
+          <div class="mt-6">
+              <h3 class="text-2xl font-semibold text-red-600">Why Choose Us?</h3>
+              <ul class="mt-2 text-lg space-y-2">
+                  <li>✅ Fresh and high-quality ingredients</li>
+                  <li>✅ Affordable and tasty meals</li>
+                  <li>✅ Friendly and fast service</li>
+                  <li>✅ A wide variety of delicious options</li>
+              </ul>
+          </div>
+      </section>
+      <script>
+          console.log("Hello, World! Welcome to the About Page.");
+      </script>
+      `,
 };
 
 document.getElementById("content").innerHTML = pages.home;
