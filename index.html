@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant | Home</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body class="bg-gray-100 text-gray-900">
+    <nav class="bg-red-600 text-white p-4 shadow-lg">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold">McDonald's</h1>
+
+        <button
+          id="menu-btn"
+          class="md:hidden text-white text-3xl focus:outline-none"
+        >
+          ☰
+        </button>
+
+        <ul id="menu" class="hidden md:flex space-x-6 text-lg">
+          <li><a href="#" class="nav-link" data-page="home">Home</a></li>
+          <li><a href="#" class="nav-link" data-page="menu">Menu</a></li>
+          <li><a href="#" class="nav-link" data-page="contact">Contact</a></li>
+          <li><a href="#" class="nav-link" data-page="about">About</a></li>
+        </ul>
+      </div>
+
+      <ul
+        id="mobile-menu"
+        class="hidden flex-col items-center space-y-4 text-white p-4 md:hidden"
+      >
+        <li><a href="#" class="nav-link" data-page="home">Home</a></li>
+        <li><a href="#" class="nav-link" data-page="menu">Menu</a></li>
+        <li><a href="#" class="nav-link" data-page="contact">Contact</a></li>
+        <li><a href="#" class="nav-link" data-page="about">About</a></li>
+      </ul>
+    </nav>
+
+    <main class="container mx-auto p-6" id="content">
+      <section id="home" class="text-center">
+        <h2 class="text-4xl font-bold text-red-600">Welcome to McDonald's</h2>
+        <p class="mt-4 text-lg">
+          Enjoy the best meals with us. Fresh ingredients, amazing flavors!
+        </p>
+        <img
+          src="https://source.unsplash.com/800x400/?restaurant,food"
+          alt="Restaurant Image"
+          class="mt-6 mx-auto rounded-lg shadow-lg"
+        />
+      </section>
+    </main>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script/main.js"></script>
+    <script>
+      document
+        .getElementById("menu-btn")
+        .addEventListener("click", function () {
+          document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+    </script>
+  </body>
+</html>
