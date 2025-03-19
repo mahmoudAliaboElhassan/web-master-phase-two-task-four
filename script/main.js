@@ -17,7 +17,7 @@ function loadMenu(page = 1) {
         .map(
           (recipe) => `
             <div class="bg-white p-4 rounded-lg shadow">
-                <img src="${recipe.image}" alt="${recipe.name}" class="rounded w-full h-40 object-cover">
+                <img src="${recipe.image}" loading="lazy" alt="${recipe.name}" class="rounded w-full h-40 object-cover">
                 <h3 class="text-xl font-semibold mt-2">${recipe.name}</h3>
             </div>
           `
@@ -56,7 +56,7 @@ const pages = {
       <section class="text-center">
           <h2 class="text-4xl font-bold text-red-600">Welcome to McDonald's</h2>
           <p class="mt-4 text-lg">Enjoy the best meals with us. Fresh ingredients, amazing flavors!</p>
-          <img src="../imgs/pexels-life-of-pix-67468.jpg" alt="Restaurant Image" class="mt-6 mx-auto rounded-lg shadow-lg">
+          <img src="../imgs/pexels-life-of-pix-67468.jpg" loading="lazy" alt="Restaurant Image" class="mt-6 mx-auto rounded-lg shadow-lg">
       </section>`,
   menu: `
       <section class="text-center">
@@ -92,7 +92,7 @@ const pages = {
               McDonald's has been serving amazing dishes since 1999. Fresh ingredients and love in every bite!
           </p>
           <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-              <img src="../imgs/kitchen.jpg" alt="Restaurant Kitchen" class="rounded-lg shadow-lg">
+              <img src="../imgs/kitchen.jpg" loading="lazy" alt="Restaurant Kitchen" class="rounded-lg shadow-lg">
               <div>
                   <h3 class="text-2xl font-semibold text-red-600">Our Mission</h3>
                   <p class="mt-2 text-lg">
